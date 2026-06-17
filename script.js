@@ -8,7 +8,25 @@ function ConvertValues() {
 
     const dolarValue = 5.19
     const euroValue = 5.89
+    const bitcoinValue = 322896.64
+    const ieneValue = 31.48
 
+        if (selectCurrency.value == "bitcoin") {
+            currencyValueConverted.innerHTML = new Intl.NumberFormat("pt-BR", {
+                style: "currency",
+                currency: "XBT", 
+                minimumFractionDigits: 8,
+                maximumFractionDigits: 8
+            }).format(inputCurrencyValue / bitcoinValue).replace("XBT", "₿");
+        }
+
+    if (selectCurrency.value == "iene") {
+        currencyValueConverted.innerHTML = new Intl.NumberFormat("ja-JP", {
+            style: "currency",
+            currency: "JPY"
+        }).format(inputCurrencyValue * ieneValue)
+    }
+ 
     // Se o select estiver em Dólar
     if (selectCurrency.value == "dolar") {
         currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
@@ -33,15 +51,25 @@ function ConvertValues() {
 }
 
 function changeCurrency() {
-    const currencyName = document.getElementById ("currency-name")
-    const currencyImage = document.getElementById ("img-currency")
+    const currencyName = document.getElementById("currency-name")
+    const currencyImage = document.getElementById("img-currency")
+
+        if (selectCurrency.value == "bitcoin") {
+        currencyName.innerHTML = "Bitcoin"
+        currencyImage.src = "./assets/bitcoin.png"
+    }
+
+    if (selectCurrency.value == "iene") {
+        currencyName.innerHTML = "Iene Japonês"
+        currencyImage.src = "./assets/japan_flag.png"
+    }
 
     if (selectCurrency.value == "dolar") {
         currencyName.innerHTML = "Dólar Americano"
         currencyImage.src = "./assets/Flag_of_the_United_States.png"
     }
 
-        if (selectCurrency.value == "euro") {
+    if (selectCurrency.value == "euro") {
         currencyName.innerHTML = "Euro"
         currencyImage.src = "./assets/Flag_of_Europe.png"
     }
