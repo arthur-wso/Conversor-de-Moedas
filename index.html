@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Conversor de Moedas</title>
+</head>
+<body>
+        <img id="logo" src="assets/hands-money.png" alt="money-logo">
+        <div class="converter-info">
+            <main>
+                <label>
+                    <h3 class="text-input">Converter de</h3>
+                    <select>
+                        <option>R$ Real Brasileiro</option>
+                    </select>
+
+                    <h3 class="text-input">Converter para</h3>
+                </label>
+
+                    <label>
+                    <select class="info-input">
+
+                        <option value="dolar">$ Dolar Americano</option>
+                        <option value="euro">€ Euro</option>
+
+                    </select>
+                </label>
+
+                <label>
+                    <h3 class="text-input">Valor</h3>
+                    <input placeholder="R$ 10.000,00" class="input-number" type="number">
+                </label>
+
+            <button class="convert-button">Converter</button>
+
+                <section class="converter-box">
+                    <div class="currency-box">
+                        <img class="img-converter" src="assets/Flag_of_Brazil.png" alt="logo-moeda-a-converter">
+                        <p class="results-text">Real Brasileiro</p>
+                        <p class="results-value-to-convert">R$ 0,00</p>
+                    </div>
+
+                    <img id="purple-arrow" src="assets/purple-arrow.png" alt="arrow-converter">
+
+                    <div class="currency-box">
+                        <img class="img-converter" id="img-currency" src="assets/Flag_of_the_United_States.png" alt="logo-moeda-convertida">
+                        <p class="results-text" id="currency-name">Dólar Americano</p>
+                        <p class="results-value">$0.00</p>
+                    </div>
+
+                </section>
+            </main>
+        </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
