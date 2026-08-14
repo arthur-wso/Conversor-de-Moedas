@@ -7,7 +7,6 @@ async function ConvertValues() {
     const currencyValueConverted = document.querySelector(".results-value") // Valor Convertido
 
     const dataBase = await fetch("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL,JPY-BRL").then(response => response.json())
-        console.log(dataBase)
 
     const dolarValue = dataBase.USDBRL.high
     const euroValue = dataBase.EURBRL.high
