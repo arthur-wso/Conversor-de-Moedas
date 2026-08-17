@@ -25,7 +25,9 @@ async function ConvertValues() {
     if (selectCurrency.value == "iene") {
         currencyValueConverted.innerHTML = new Intl.NumberFormat("ja-JP", {
             style: "currency",
-            currency: "JPY"
+            currency: "JPY",
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 3
         }).format(inputCurrencyValue * ieneValue)
     }
  
