@@ -5,7 +5,6 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-
     font-family: "Quicksand", sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -13,6 +12,11 @@
 
 body {
     background-color: #8025d4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 img {
@@ -21,15 +25,12 @@ img {
 
 #logo {
     width: 300px;
-    display: block;
+    display: flex;
     margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 main {
     width: 375px;
-    margin: 0 auto;
     border-radius: 20px;
     background-color: white;
     padding: 44px 24px 23px;
@@ -85,17 +86,19 @@ section {
     border: 1px solid #8025d4;
     border-radius: 20px;
     padding: 12px;
-    padding-left: 125px;
-}
-
-#purple-arrow {
-    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .currency-box {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    align-items: center;
+}
+
+#purple-arrow {
+    margin: 15px 0;
 }
 
 .results-text{
