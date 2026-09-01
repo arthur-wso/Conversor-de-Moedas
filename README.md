@@ -26,20 +26,6 @@ Durante o desenvolvimento, enfrentei e resolvi alguns problemas reais de engenha
 
 Esses problemas fizeram parte do processo de aprendizado e me ajudaram a entender melhor como o JavaScript lida com escopo, hoisting e controle de versão.
 
-## 📦 Como executar o projeto
-
-```bash
-# Clone o repositório
-git clone https://github.com/arthur-wso/Conversor-de-Moedas.git
-
-# Entre na pasta do projeto
-cd Conversor-de-Moedas
-
-# Abra o arquivo index.html no navegador
-```
-
-Não é necessário nenhum passo de build — o projeto roda diretamente no navegador.
-
 ## 📌 Status do projeto
 
 Projeto de estudo, desenvolvido durante minha formação Full Stack pelo DevClub.
