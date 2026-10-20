@@ -2,14 +2,14 @@
 
 Aplicação web para conversão de valores entre moedas em tempo real, consumindo uma API externa através de requisições assíncronas.
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
 - Conversão de valores entre diferentes moedas em tempo real
 - Consumo de API externa via `fetch` (requisições assíncronas)
 - Formatação monetária localizada (BRL) usando `toLocaleString()` e `toFixed()`
 - Tratamento de erros e validação de entrada
 
-## 🛠️ Tecnologias utilizadas
+## Tecnologias utilizadas
 
 - **JavaScript** (ES6+)
 - **HTML5**
@@ -17,7 +17,7 @@ Aplicação web para conversão de valores entre moedas em tempo real, consumind
 - **Fetch API** para consumo de dados externos
 - **Git & GitHub** para versionamento
 
-## 🧠 Desafios técnicos superados
+## Desafios técnicos
 
 Durante o desenvolvimento, enfrentei e resolvi alguns problemas reais de engenharia:
 
@@ -26,11 +26,11 @@ Durante o desenvolvimento, enfrentei e resolvi alguns problemas reais de engenha
 
 Esses problemas fizeram parte do processo de aprendizado e me ajudaram a entender melhor como o JavaScript lida com escopo, hoisting e controle de versão.
 
-## 📌 Status do projeto
+## Status do projeto
 
 Projeto de estudo, desenvolvido durante minha formação Full Stack pelo DevClub.
 
-## 👤 Autor
+## Autor
 
 **Arthur Pereira**
 Desenvolvedor Front-End | Ribeirão Preto - SP
